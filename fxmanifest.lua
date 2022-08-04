@@ -3,7 +3,7 @@ game 'gta5'
 
 description 'pe-reputation'
 author 'Project Express'
-version '1.0.0'
+version '0.0.1'
 
 server_scripts {
     '@oxmysql/lib/MySQL.lua',
