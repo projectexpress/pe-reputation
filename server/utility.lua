@@ -25,6 +25,12 @@ local function Utility_AddPlayerReputation(Player, identifier, amount)
     Player.Functions.UpdatePlayerData()
 end
 
+local function Utility_SetPlayerReputation(Player, identifier, amount)
+    Player.PlayerData.metadata['pe-jobrep'] = Player.PlayerData.metadata['pe-jobrep'] or {}
+    Player.PlayerData.metadata['pe-jobrep'][identifier] = amount
+    Player.Functions.UpdatePlayerData()
+end
+
 local function Utility_CheckRequiredArguments(args)
     local verification = {
         ['source'] = false,
