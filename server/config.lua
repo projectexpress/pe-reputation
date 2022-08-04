@@ -13,6 +13,8 @@ Config.DefaultAction = 1
 Config.DebugMessages = true
 -- -> Which notification system do you use? Currently only supports 'qb-core'.
 Config.NotificationSystem = 'qb-core'
+-- -> Do you want console messages when your script is outdated?
+Config.VersionCheck = true
 
 -- Reputation Table
 -- -> This table defines all of the identifiers, levels, actions, and other important details for adding and removing reputation.
